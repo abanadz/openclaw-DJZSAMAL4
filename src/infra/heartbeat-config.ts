@@ -10,7 +10,7 @@ import type { AgentDefaultsConfig } from "../config/types.agent-defaults.js";
 import { normalizeAgentId } from "../routing/session-key.js";
 
 export type HeartbeatConfig = AgentDefaultsConfig["heartbeat"];
-export type HeartbeatAgent = {
+type HeartbeatAgent = {
   agentId: string;
   heartbeat?: HeartbeatConfig;
 };
